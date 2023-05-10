@@ -3,12 +3,14 @@ import { PostsCollection, postsSlug } from './collections/Posts';
 import { MenuGlobal } from './globals/Menu';
 import { devUser } from '../credentials';
 import { MediaCollection } from './collections/Media';
+import { Pages } from './collections/Page';
 
 export default buildConfig({
   // ...extend config here
   collections: [
     PostsCollection,
     MediaCollection,
+    Pages,
     // ...add more collections here
   ],
   globals: [
