@@ -27,8 +27,16 @@ export default buildConfig({
 
     await payload.create({
       collection: postsSlug,
+      draft: true,
       data: {
         text: 'example post',
+      },
+    });
+    await payload.create({
+      collection: postsSlug,
+      draft: true,
+      data: {
+        text: 'Seed Test Draft',
       },
     });
   },
