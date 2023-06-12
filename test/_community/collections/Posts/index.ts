@@ -5,10 +5,15 @@ export const postsSlug = 'posts';
 
 export const PostsCollection: CollectionConfig = {
   slug: postsSlug,
+  versions: {
+    drafts: true,
+    maxPerDoc: 20,
+  },
   fields: [
     {
       name: 'text',
       type: 'text',
+      maxLength: 20,
     },
     {
       name: 'associatedMedia',
